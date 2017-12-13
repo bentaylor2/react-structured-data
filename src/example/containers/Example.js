@@ -1,16 +1,13 @@
 import React, { PureComponent } from 'react';
-import Header from '../components/Header';
-import logo from '../rsd-logo.svg';
 import styles from './Example.scss';
-import { 
-  JSONLD, 
-  Graph, 
-  Product, 
-  AggregateRating, 
-  ItemReviewed, 
-  Review, 
-  Author, 
-  Location, 
+import {
+  JSONLD,
+  Graph,
+  Product,
+  ItemReviewed,
+  Review,
+  Author,
+  Location,
   Rating
 } from '../core/JSONLD';
 
@@ -19,7 +16,9 @@ class Example extends PureComponent {
   render() {
     return (
       <section className={styles.example}>
-        <Header />
+        <header className={styles.header}>
+          <h2>React Structured Data</h2>
+        </header>
         <p>
           Each JSONLD component added creates a script tag with structured data on the page
         </p>
