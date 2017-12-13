@@ -1,0 +1,21 @@
+.Example {
+  padding: 20px;
+  &__heading {
+    background: #333333;
+  }
+  &__intro {
+    text-align: center;
+  }
+  &__json-text {
+    text-align: center;
+  }
+  &__code {
+    // display: flex;
+  }
+  &__code-block {
+    display: flex;
+    pre {
+      padding: 20px;
+    }
+  }
+}
