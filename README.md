@@ -31,7 +31,7 @@ The following JSX:
 will add the following to your markup (will be minified):
 
 ```html
-<script type="application/ld+json" data-reactid=".0.0.2.0.1.3.3">
+<script type="application/ld+json">
   {
     "@context":"http://schema.org/",
     "@type":"Product",
