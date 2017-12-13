@@ -106,7 +106,7 @@ You will also see any lint errors in the console.
 
 ## Reference
 
-###Preset Components
+### Preset Components
 There are several preset schema components that can be used
 
 - AggregateRating
