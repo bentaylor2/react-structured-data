@@ -2,6 +2,27 @@
 
 react-structured-data provides an easy way to add declarative JSX that forms structured data for ReactJS Apps.
 
+## Installation
+
+### Yarn
+
+run `yarn add react-structured-data`
+
+### NPM
+
+run `npm install react-structured-data --save`
+
+### To run example Locally
+In the project directory, you can run:
+
+#### `npm start` or `yarn start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
 ## Code Example
 
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
@@ -82,27 +103,6 @@ will add the following to your markup (will be minified):
   }
 </script>
 ```
-
-## Installation
-
-### Yarn
-
-run `yarn add react-structured-data`
-
-### NPM
-
-run `npm install react-structured-data --save`
-
-### To run example Locally
-In the project directory, you can run:
-
-#### `npm start` or `yarn start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
 ## Reference
 
