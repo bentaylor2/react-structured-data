@@ -27,20 +27,36 @@ class Example extends PureComponent {
         Below is generated JSON-LD
         </p>
         <section className={styles.exampleCode}>
-        <div className={`${styles.exampleCodeBlock} fl w-50 pa2`}>
-          <CodeSnippet language="html" codeString={ product }/>
-        </div>
-        <div className={`${styles.exampleCodeBlock} fl w-50 pa2`}>
-          <CodeSnippet language="json" codeString={ productOutput } />
-        </div>
-        <div className={`${styles.exampleCodeBlock} fl w-50 pa2`}>
-          <CodeSnippet language="html" codeString={ aggregateRating } />
-          <CodeSnippet language="json" codeString={ aggregateRatingOutput } />
-        </div>
-        <div className={`${styles.exampleCodeBlock} fl w-50 pa2`}>
-          <CodeSnippet language="html" codeString={ reviews } />
-          <CodeSnippet language="json" codeString={ reviewsOutput } />
-        </div>
+          <JSONLD>
+            <Graph>
+              <Review
+                name="It's awesome"
+                reviewBody="This is Great! My family loves it"
+                datePublished="11/22/1963">
+                <Author name="Jerry"/>
+                <Location name="Chicago, IL"/>
+                <Rating ratingValue={5} />
+                <ItemReviewed>
+                  <Product
+                    name="Product Name"
+                    parentID="product-x" />
+                </ItemReviewed>
+              </Review>
+              <Review
+                name="Very cool"
+                reviewBody="I like this a lot. Very cool product"
+                datePublished="11/22/1963">
+                <Author name="Cool Carl"/>
+                <Location name="Chicago, IL"/>
+                <Rating ratingValue={4} />
+                <ItemReviewed>
+                  <Product
+                    name="Product Name"
+                    parentID="product-x" />
+                </ItemReviewed>
+              </Review>
+            </Graph>
+          </JSONLD>
         </section>
       </section>
     );
