@@ -16,7 +16,6 @@ import {
 
 class Example extends PureComponent {
   render() {
-    // <img src={logo} className="App-logo" alt="logo" />
     return (
       <section className={styles.example}>
         <Header />
