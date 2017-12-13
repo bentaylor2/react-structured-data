@@ -1,6 +1,6 @@
 # React Structured Data
 
-React Structured Data provides an easy way to add structured data to your React Apps with simple, declarative JSX syntax. Structured data is a standardized format for providing information about a page and classifying the page content. This library follows guidelines specified at http://schema.org/.
+React Structured Data provides an easy way to add structured data to your React apps. Structured data is a standardized format for providing information about a page and classifying the page content. This library follows guidelines specified at http://schema.org/.
 
 ## Installation
 
@@ -24,8 +24,6 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 The following JSX:
 
@@ -123,13 +121,9 @@ There are several preset schema components that can be used
 
 For more information on Structured data, visit https://developers.google.com/search/docs/guides/intro-structured-data, and also http://schema.org/.
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+TBA
 
 ## License
 
