@@ -1,4 +1,4 @@
-#React Structured Data
+# React Structured Data
 
 react-structured-data provides an easy way to add declarative JSX that forms structured data for ReactJS Apps.
 
