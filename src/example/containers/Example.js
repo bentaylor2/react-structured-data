@@ -1,18 +1,19 @@
 import React, { PureComponent } from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
-import CodeSnippet from '../components/CodeSnippet';
 import logo from '../rsd-logo.svg';
-import CodeCard from '../components/CodeCard';
 import styles from './Example.scss';
-import {
-  product,
-  productOutput,
-  aggregateRating,
-  aggregateRatingOutput,
-  reviews,
-  reviewsOutput
-} from './TextExamples';
+import { 
+  JSONLD, 
+  Graph, 
+  Product, 
+  AggregateRating, 
+  ItemReviewed, 
+  Review, 
+  Author, 
+  Location, 
+  Rating
+} from '../core/JSONLD';
+
 
 class Example extends PureComponent {
   render() {
