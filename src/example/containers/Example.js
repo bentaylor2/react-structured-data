@@ -9,7 +9,7 @@ import {
   Author,
   Location,
   Rating
-} from '../core/JSONLD';
+} from '../../core';
 
 
 class Example extends PureComponent {
