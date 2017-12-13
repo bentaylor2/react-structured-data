@@ -1,0 +1,34 @@
+.Main {
+  text-align: center;
+}
+
+.Main-logo {
+  animation: Main-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Main-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Main-title {
+  font-size: 1.5em;
+}
+
+.Main-intro {
+  font-size: large;
+}
+
+.Main-jsonld {
+  height: 500px;
+  width: 500px;
+  display: block;
+}
+
+@keyframes Main-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
