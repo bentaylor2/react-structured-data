@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Declarative JSON-LD Structured Data for ReactJS Apps",
   "author": "Ben Taylor <benlt105@gmail.com>",
-  "private": true,
+  "private": false,
   "keywords": [
     "react",
     "React",
