@@ -1,5 +1,8 @@
 src/*
 build/*
+_config.yml
+yarn-error.log
+.npmignore
 index.css
 index.js
 registerServiceWorker.js

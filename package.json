@@ -28,8 +28,6 @@
     "babel-plugin-transform-class-properties": "6.11.5",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "6.9.0",
-    "babel-preset-es2016": "6.11.3",
     "babel-preset-react": "6.24.1",
     "babel-preset-react-app": "^3.1.0",
     "babel-preset-stage-2": "^6.13.0",
@@ -73,7 +71,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "builddist": "BABEL_ENV=production babel src/core --plugins transform-object-assign,transform-class-properties --presets babel-preset-stage-2,babel-preset-react-app,es2015 --out-dir dist",
+    "builddist": "BABEL_ENV=production babel src/core --plugins transform-object-assign,transform-class-properties --presets babel-preset-stage-2,babel-preset-react-app --out-dir dist",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
