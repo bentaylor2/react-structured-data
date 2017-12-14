@@ -9,7 +9,7 @@ import {
   Author,
   Location,
   Rating
-} from '../../core';
+} from 'react-structured-data';
 
 
 class Example extends PureComponent {
