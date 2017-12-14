@@ -734,7 +734,7 @@ babel-plugin-transform-es2015-modules-amd@^6.22.0, babel-plugin-transform-es2015
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1:
+babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1, babel-plugin-transform-es2015-modules-commonjs@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-es2015-modules-commonjs/-/babel-plugin-transform-es2015-modules-commonjs-6.26.0.tgz#0d8394029b7dc6abe1a97ef181e00758dd2e5d8a"
   dependencies:
@@ -5291,9 +5291,9 @@ pretty-format@^20.0.3:
     ansi-regex "^2.1.1"
     ansi-styles "^3.0.0"
 
-"prism-themes@https://github.com/PrismJS/prism-themes.git#afb4116547cd854074ad705b8171768403ca11f3":
+"prism-themes@git+https://github.com/PrismJS/prism-themes.git#afb4116547cd854074ad705b8171768403ca11f3":
   version "1.0.0"
-  resolved "https://github.com/PrismJS/prism-themes.git#afb4116547cd854074ad705b8171768403ca11f3"
+  resolved "git+https://github.com/PrismJS/prism-themes.git#afb4116547cd854074ad705b8171768403ca11f3"
 
 prismjs@^1.8.4, prismjs@~1.9.0:
   version "1.9.0"
@@ -5499,7 +5499,7 @@ react-error-overlay@^3.0.0:
 
 react-structured-data@./react-structured-data-0.0.1.tgz:
   version "0.0.1"
-  resolved "./react-structured-data-0.0.1.tgz#6c4e56536e17543b7a14bfc0508c001ff6d3af2a"
+  resolved "./react-structured-data-0.0.1.tgz#6c0c102cd3fa795fe27d267e94fe35d57aacb111"
 
 react-syntax-highlighter@^6.1.0:
   version "6.1.0"
