@@ -18,9 +18,6 @@
     "seo",
     "react-component"
   ],
-  "dependencies": {
-
-  },
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
