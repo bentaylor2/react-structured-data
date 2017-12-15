@@ -57,10 +57,10 @@ class Example extends PureComponent {
             </Graph>
           </JSONLD>
           <JSONLD>
-            <Generic id="review" jsonldtype="Review" schema={{name: "It is awesome", reviewBody: "This is great!"}}>
-              <Generic id="itemReviewed" jsonldtype="Product" schema={{"@id":"product-x"}} />
-              <Generic id="author" jsonldtype="Person" schema={{name: "Cool Carl"}}/>
-              <Generic id="locationCreated" jsonldtype="AdministrativeArea" schema={{name: "Chicago, IL"}}/>
+            <Generic type="review" jsonldtype="Review" schema={{name: "It is awesome", reviewBody: "This is great!"}}>
+              <Generic type="itemReviewed" jsonldtype="Product" schema={{"@id":"product-x"}} />
+              <Generic type="author" jsonldtype="Person" schema={{name: "Cool Carl"}}/>
+              <Generic type="locationCreated" jsonldtype="AdministrativeArea" schema={{name: "Chicago, IL"}}/>
             </Generic>
           </JSONLD>
         </section>

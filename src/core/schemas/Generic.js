@@ -7,9 +7,8 @@ class ChildNode extends JSONLDAbstractNode {
     const details = {
       '@type': this.props.jsonldtype
     }
-    return isFirstChildNode
-      ? Object.assign({...details, ...schema}, ...parseChildren)
-      : Object.assign({[this.props.id]: { ...details, ...schema, ...parseChildren}});
+
+    return Object.assign({...details, ...schema}, ...parseChildren);
   }
 }
 
