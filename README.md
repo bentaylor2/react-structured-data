@@ -111,7 +111,7 @@ Generic and GenericCollection allow you to add your own structured data type.
 
 For example, If Review preset didn't exist, you could write:
 
-```
+```html
 <JSONLD>
   <Generic id="review" jsonldtype="Review" schema={{name: "It is awesome", reviewBody: "This is great!"}}>
     <Generic id="itemReviewed" jsonldtype="Product" schema={{"@id":"product-x"}} />
