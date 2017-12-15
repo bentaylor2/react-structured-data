@@ -127,6 +127,7 @@ There will also be more preset components to come in future releases to make imp
 ### Structured Data and Schema.org
 
 For more information on Structured data, visit https://developers.google.com/search/docs/guides/intro-structured-data, and also http://schema.org/.
+You can also validate the structured data here: https://search.google.com/structured-data/testing-tool.
 
 ## Contributors
 
