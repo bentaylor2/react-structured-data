@@ -121,6 +121,31 @@ For example, If Review preset didn't exist, you could write:
 </JSONLD>
 ```
 
+This will output (minified):
+
+```html
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Review",
+    "name": "It is awesome",
+    "reviewBody": "This is great!",
+    "itemReviewed": {
+      "@type": "Product",
+      "@id": "product-x"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Cool Carl"
+    },
+    "locationCreated": {
+      "@type": "AdministrativeArea",
+      "name": "Chicago, IL"
+    }
+  }
+</script>
+```
+
 This may seem not as ideal as using the presets, but this allows completely customizable structured data.
 There will also be more preset components to come in future releases to make implementation easier so stay tuned!
 
