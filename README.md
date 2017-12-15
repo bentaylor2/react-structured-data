@@ -6,11 +6,11 @@ React Structured Data provides an easy way to add structured data to your React 
 
 ### Yarn
 
-run `yarn add react-structured-data`
+`yarn add react-structured-data`
 
 ### NPM
 
-run `npm install react-structured-data --save`
+`npm install react-structured-data --save`
 
 ## Code Example
 
