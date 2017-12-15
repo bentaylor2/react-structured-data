@@ -16,6 +16,8 @@ var _JSONLDAbstractNode3 = _interopRequireDefault(_JSONLDAbstractNode2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36,11 +38,14 @@ var ChildNode = function (_JSONLDAbstractNode) {
   _createClass(ChildNode, [{
     key: 'getJSON',
     value: function getJSON() {
+      var isFirstChildNode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
       var parseChildren = _get(ChildNode.prototype.__proto__ || Object.getPrototypeOf(ChildNode.prototype), 'parseChildren', this).call(this);
+      var schema = this.props.schema;
       var details = {
         '@type': this.props.jsonldtype
       };
-      return _extends.apply(undefined, [details, this.props.schema].concat(_toConsumableArray(parseChildren)));
+      return isFirstChildNode ? _extends.apply(undefined, [_extends({}, details, schema)].concat(_toConsumableArray(parseChildren))) : _extends(_defineProperty({}, this.props.id, _extends({}, details, schema, parseChildren)));
     }
   }]);
 
