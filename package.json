@@ -1,6 +1,6 @@
 {
   "name": "react-structured-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Declarative JSON-LD Structured Data for ReactJS Apps",
   "author": "Ben Taylor <benlt105@gmail.com>",
   "private": false,
@@ -18,6 +18,10 @@
     "seo",
     "react-component"
   ],
+  "dependencies": {
+    "react": "^16.2.0",
+    "prop-types": "^15.6.0"
+  },
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "babel-cli": "^6.14.0",
@@ -59,8 +63,6 @@
     "react": "^16.2.0",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.2.0",
-    "react-structured-data": "./react-structured-data-0.0.1.tgz",
-    "react-syntax-highlighter": "^6.1.0",
     "sass-loader": "^6.0.6",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",

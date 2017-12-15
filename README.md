@@ -106,6 +106,24 @@ There are several preset schema components that can be used
 - Rating
 - Review
 
+If you would like to use a component that is not listed, simply use the Generic component and add the prop jsonldtype.
+Generic and GenericCollection allow you to add your own structured data type.
+
+For example, If Review preset didn't exist, you could write:
+
+```
+<JSONLD>
+  <Generic id="review" jsonldtype="Review" schema={{name: "It is awesome", reviewBody: "This is great!"}}>
+    <Generic id="itemReviewed" jsonldtype="Product" schema={{"@id":"product-x"}} />
+    <Generic id="author" jsonldtype="Person" schema={{name: "Cool Carl"}}/>
+    <Generic id="locationCreated" jsonldtype="AdministrativeArea" schema={{name: "Chicago, IL"}}/>
+  </Generic>
+</JSONLD>
+```
+
+This may seem not as ideal as using the presets, but this allows completely customizable structured data.
+There will also be more preset components to come in future releases to make implementation easier so stay tuned!
+
 ### Structured Data and Schema.org
 
 For more information on Structured data, visit https://developers.google.com/search/docs/guides/intro-structured-data, and also http://schema.org/.
