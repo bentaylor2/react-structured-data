@@ -34,11 +34,12 @@ var JSONLD = function JSONLD(props) {
     var firstChild = new ChildClass(props.children.props).getJSON(true, schema);
     json = ChildClass.name === 'JSONLDNodeCollection' ? _extends({ '@context': 'http://schema.org/' }, _defineProperty({}, type, firstChild)) : _extends({ '@context': 'http://schema.org/' }, firstChild);
   }
-  return _react2.default.createElement(
-    'script',
-    { type: 'application/ld+json' },
-    JSON.stringify(json)
-  );
+  return _react2.default.createElement('script', {
+    type: 'application/ld+json',
+    dangerouslySetInnerHTML: {
+      __html: JSON.stringify(json)
+    }
+  });
 };
 
 exports.JSONLD = JSONLD;

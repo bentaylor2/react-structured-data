@@ -12,7 +12,12 @@ export const JSONLD = props => {
       : Object.assign({'@context': 'http://schema.org/'}, firstChild)
   }
   return (
-    <script type="application/ld+json">{ JSON.stringify(json) }</script>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(json),
+      }}
+    />
   );
 }
 
