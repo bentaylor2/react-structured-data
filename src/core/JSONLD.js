@@ -11,13 +11,20 @@ export const JSONLD = props => {
       ? Object.assign({'@context': 'http://schema.org/'}, {[type]: firstChild})
       : Object.assign({'@context': 'http://schema.org/'}, firstChild)
   }
-  return (
-    <script type="application/ld+json">{ JSON.stringify(json) }</script>
+
+  return (props.dangerouslyExposeHtml
+    ? <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(json)}} />
+    : <script type="application/ld+json">{ JSON.stringify(json) }</script>
   );
 }
 
 JSONLD.propTypes = {
-  additionalType: PropTypes.object
+  additionalType: PropTypes.object,
+  dangerouslyExposeHtml: PropTypes.bool
+};
+
+JSONLD.defaultProps = {
+  dangerouslyExposeHtml: false
 };
 
 export default JSONLD;
