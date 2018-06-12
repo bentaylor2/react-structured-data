@@ -8,7 +8,8 @@ import {
   Review,
   Author,
   Location,
-  Rating
+  Rating,
+  Generic
 } from 'react-structured-data';
 
 
