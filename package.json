@@ -19,8 +19,9 @@
     "react-component"
   ],
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "prop-types": "^15.6.0"
+    "react-structured-data": "^0.0.8"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
