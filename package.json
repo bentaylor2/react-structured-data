@@ -4,6 +4,8 @@
   "description": "Declarative JSON-LD Structured Data for ReactJS Apps",
   "author": "Ben Taylor <benlt105@gmail.com>",
   "private": false,
+  "homepage": "https://bentaylor2.github.io/react-structured-data/",
+  "license": "MIT",
   "keywords": [
     "react",
     "React",
@@ -18,9 +20,13 @@
     "seo",
     "react-component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bentaylor2/react-structured-data.git"
+  },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
