@@ -11,6 +11,8 @@ class JSONLDAbstractNode extends React.Component {
   };
 
   getChildJSON(child, isCollection) {
+    if(!child) return '';
+    
     const ChildClass = child.type;
     let { children, type, id, parentID, ...schema } = child.props;
     if (!!parentID) schema = {'@id': parentID };
