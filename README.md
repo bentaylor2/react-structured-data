@@ -16,7 +16,7 @@ React Structured Data provides an easy way to add structured data to your React 
 
 The following JSX:
 
-```html
+```jsx
   <JSONLD>
     <Product name="Product Name">
       <AggregateRating ratingValue={4.3} reviewCount={197}/>
@@ -140,7 +140,7 @@ Generic and GenericCollection allow you to add your own structured data type.
 
 For example, If Review preset didn't exist, you could write:
 
-```html
+```jsx
 <JSONLD>
   <Generic type="review" jsonldtype="Review" schema={{name: "It is awesome", reviewBody: "This is great!"}}>
     <Generic type="itemReviewed" jsonldtype="Product" schema={{"@id":"product-x"}} />
