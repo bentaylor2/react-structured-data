@@ -28,8 +28,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var JSONLDAbstractNode = function (_React$Component) {
-  _inherits(JSONLDAbstractNode, _React$Component);
+var JSONLDAbstractNode = function (_React$PureComponent) {
+  _inherits(JSONLDAbstractNode, _React$PureComponent);
 
   function JSONLDAbstractNode() {
     _classCallCheck(this, JSONLDAbstractNode);
@@ -70,7 +70,8 @@ var JSONLDAbstractNode = function (_React$Component) {
       if (this.props.children.length > 0) {
         return this.props.children.map(function (child) {
           if (!child) return {};
-          _this2.getChildJSON(child, isCollection);
+
+          return _this2.getChildJSON(child, isCollection);
         });
       }
       return [this.getChildJSON(this.props.children, isCollection)];
@@ -83,7 +84,7 @@ var JSONLDAbstractNode = function (_React$Component) {
   }]);
 
   return JSONLDAbstractNode;
-}(_react2.default.Component);
+}(_react2.default.PureComponent);
 
 JSONLDAbstractNode.propTypes = {
   schema: _propTypes2.default.object,
