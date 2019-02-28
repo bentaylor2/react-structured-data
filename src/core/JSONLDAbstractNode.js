@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class JSONLDAbstractNode extends React.Component {
+class JSONLDAbstractNode extends React.PureComponent {
 
   static propTypes = {
     schema: PropTypes.object,
@@ -30,7 +30,8 @@ class JSONLDAbstractNode extends React.Component {
     if (this.props.children.length > 0) {
       return this.props.children.map(child => {
       	if(!child) return {};
-      	this.getChildJSON(child, isCollection)
+      	
+      	return this.getChildJSON(child, isCollection);
       });
     }
     return [this.getChildJSON(this.props.children, isCollection)];
