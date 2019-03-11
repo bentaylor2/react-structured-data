@@ -7,6 +7,7 @@ class JSONLDAbstractNode extends React.Component {
     schema: PropTypes.object,
     type: PropTypes.string,
     id: PropTypes.string,
+    protocol: PropTypes.oneOf(['http', 'https']),
     jsonldtype: PropTypes.string
   };
 
@@ -14,7 +15,7 @@ class JSONLDAbstractNode extends React.Component {
     if(!child) return '';
     
     const ChildClass = child.type;
-    let { children, type, id, parentID, ...schema } = child.props;
+    let { children, type, protocol, id, parentID, ...schema } = child.props;
     if (!!parentID) schema = {'@id': parentID };
     if (!!id) schema = {
       ...schema,

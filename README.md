@@ -41,7 +41,7 @@ will add the following to your markup (will be minified):
 ```html
 <script type="application/ld+json">
   {
-    "@context":"http://schema.org/",
+    "@context":"https://schema.org/",
     "@type":"Product",
     "name":"Product Name",
     "aggregateRating": {
@@ -155,7 +155,7 @@ This will output (minified):
 ```html
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org/",
+    "@context": "https://schema.org/",
     "@type": "Review",
     "name": "It is awesome",
     "reviewBody": "This is great!",

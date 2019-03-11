@@ -10,7 +10,7 @@ import {
   Location,
   Rating,
   Generic
-} from 'react-structured-data';
+} from '../../../dist';
 
 
 class Example extends PureComponent {
