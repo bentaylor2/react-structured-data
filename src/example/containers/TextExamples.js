@@ -9,7 +9,7 @@ export const product = `
 export const productOutput = `
   <script type="application/ld+json">
     {
-      "@context":"http://schema.org/",
+      "@context":"https://schema.org/",
       "@type":"Product",
       "name":"Product Name",
       "id":"product-x"
@@ -34,7 +34,7 @@ export const aggregateRating = `
 export const aggregateRatingOutput = `
   <script type="application/ld+json">
     {
-      "@context":"http://schema.org/",
+      "@context":"https://schema.org/",
       "@type":"AggregateRating",
       "ratingValue":4.3,
       "reviewCount":197,
@@ -82,7 +82,7 @@ export const reviews = `
 export const reviewsOutput = `
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org/",
+      "@context": "https://schema.org/",
       "@graph": [{
         "@type": "Review",
         "name": "It's awesome",

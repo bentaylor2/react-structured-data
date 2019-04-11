@@ -8,8 +8,8 @@ export const JSONLD = props => {
     const { children, type, ...schema } = props.children.props;
     const firstChild = new ChildClass(props.children.props).getJSON(true, schema);
     json = ChildClass.name === 'JSONLDNodeCollection'
-      ? Object.assign({'@context': 'http://schema.org/'}, {[type]: firstChild})
-      : Object.assign({'@context': 'http://schema.org/'}, firstChild)
+      ? Object.assign({'@context': 'https://schema.org/'}, {[type]: firstChild})
+      : Object.assign({'@context': 'https://schema.org/'}, firstChild)
   }
 
   return (props.dangerouslyExposeHtml
