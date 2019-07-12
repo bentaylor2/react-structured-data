@@ -11,3 +11,4 @@ export { default as ItemReviewed } from './ItemReviewed';
 export { default as Question } from './Question';
 export { default as Answer } from './Answer';
 export { default as Graph } from './Graph';
+export { default as Offer } from './Offer';
