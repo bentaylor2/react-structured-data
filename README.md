@@ -130,6 +130,7 @@ There are several preset schema components that can be used
 - Author
 - ItemReviewed
 - Location
+- Offer
 - Product
 - Question
 - Rating
