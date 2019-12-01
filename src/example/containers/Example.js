@@ -14,8 +14,7 @@ import {
   Generic,
   Organization,
   PostalAddress
-//} from 'react-structured-data';
-} from '../../core/index';
+} from 'react-structured-data';
 
 class Example extends PureComponent {
   render() {
