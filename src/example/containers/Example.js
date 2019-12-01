@@ -2,16 +2,19 @@ import React, { PureComponent } from 'react';
 import styles from './Example.scss';
 import {
   JSONLD,
+  AggregateRating,
   Graph,
   Product,
   ItemReviewed,
+  GenericCollection,
   Review,
   Author,
   Location,
   Rating,
-  Generic
+  Generic,
+  Organization,
+  PostalAddress
 } from 'react-structured-data';
-
 
 class Example extends PureComponent {
   render() {
@@ -63,6 +66,17 @@ class Example extends PureComponent {
               <Generic type="author" jsonldtype="Person" schema={{name: "Cool Carl"}}/>
               <Generic type="locationCreated" jsonldtype="AdministrativeArea" schema={{name: "Chicago, IL"}}/>
             </Generic>
+          </JSONLD>
+          <JSONLD>
+            <Organization name="John Doe Company"
+              url="https://www.johnDoeCompany.com" 
+              logo="https://www.johnDoeCompany.tv/wp-content/uploads/2017/08/logo.png">
+              <PostalAddress addressCountry="HU" 
+                addressLocality="Budapest" 
+                addressRegion="Pest" 
+                postalCode="1063" 
+                streetAddress="Bajnok utca 13" />
+            </Organization>
           </JSONLD>
         </section>
       </section>
